@@ -4,8 +4,8 @@
 
 # The Default Profile
 [profile.default]
-solc_version = "0.8.28"
-evm_version = "paris" # Cancun will be tested in the CI.
+solc_version = "0.8.29"
+evm_version = "osaka" # Cancun will be tested in the CI.
 auto_detect_solc = false
 optimizer = true
 optimizer_runs = 1_000
@@ -15,6 +15,8 @@ fs_permissions = [{ access = "read", path = "./test/data"}]
 remappings = [
   "forge-std=test/utils/forge-std/"
 ]
+eof = true
+#additional_compiler_profiles = [ { name = "eof", eof_version = 1 } ]
 
 [profile.pre_global_structs]
 skip = ["*/g/*", "*/*7702*", "*/*Transient*", "*/ext/ithaca/*", "*/ext/zksync/*"]
