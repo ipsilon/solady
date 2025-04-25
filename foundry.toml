@@ -4,8 +4,9 @@
 
 # The Default Profile
 [profile.default]
-solc_version = "0.8.29"
+solc_version = "/Users/rodia/projects/solidity1/build/solc/solc"
 evm_version = "osaka" # Cancun will be tested in the CI.
+eof = true
 auto_detect_solc = false
 optimizer = true
 optimizer_runs = 1_000
